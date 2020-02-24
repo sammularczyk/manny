@@ -9,21 +9,19 @@ collections: # A list of collections the CMS should be able to edit
     label: "Pages"
     files:
       - file: "site/content/_index.md"
-        label: "Home Page"
+        label: "Homepage"
         name: "home"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: "Blurb", name: blurb, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Title", name: title, widget: string}
           - {label: "Intro", name: intro, widget: object, fields: [
+              {label: "Line 1", name: line1, widget: string, hint: 'With comma at end - e.g. For all your hospitality needs,'},
+              {label: "Line 2", name: line2, widget: string}]}
+          - {label: "Email", name: email, widget: string, pattern: ['^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}', "Must be a valid email"]}
+          - {label: "About", name: about, widget: object, fields: [
               {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Products", name: products, widget: list, fields: [
               {label: "Image", name: "image", widget: "image"},
               {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Values", name: "values", widget: "object", fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Instagram", name: instagram, widget: "object", fields: [
+              {label: "Instagram account", name: "account", widget: string, hint: "Without @ sign at start"},
+              {label: "Hashtag", name: "hashtag", widget: "string", hint: "Without # at start"}]}
+          - {label: "Email heading", name: emailheading, widget: string, hint: "e.g. Let's talk"}
