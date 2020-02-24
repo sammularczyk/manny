@@ -85,3 +85,8 @@
 
 /* Uncomment out the line below to help debug layout issues */
 /*@import './imports/_debug';*/
+
+@import './imports/_header';
+@import './imports/_email';
+@import './imports/_about';
+@import './imports/_instagram';

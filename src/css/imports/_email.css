@@ -1,0 +1,10 @@
+.email {
+    font-weight: bold;
+    line-height: 1.1em;
+    color: var(--black);
+}
+
+.email a {
+    font-weight: normal;
+    color: var(--highlight);
+}

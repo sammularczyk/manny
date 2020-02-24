@@ -1,0 +1,17 @@
+.header {
+    text-align: center;
+}
+
+.header-logo {
+    max-width: 18rem;
+    margin-bottom:1rem;
+}
+
+.header-h1 {
+    line-height: 1.1em;
+    letter-spacing: -0.02em;
+}
+
+.header-h1 strong {
+    color: var(--highlight);
+}

@@ -6,7 +6,7 @@ html {
   @media (--breakpoint-large) {
     font-size: var(--font-size-l);
   }
-  background-color: var(--black);
+  background-color: var(--off-white);
 }
 
 
@@ -18,7 +18,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--off-white);
+  color: var(--black);
  }
+
+
+.display {
+  font-family: var(--font-family-display);
+}
 
 p {
   margin-bottom: var(--spacing-medium);
