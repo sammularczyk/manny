@@ -1,12 +1,6 @@
 {{ define "main" }}
 <div class="ph2 ph4-ns">
     {{ partial "header" (dict "line1" .Params.intro.line1 "line2" .Params.intro.line2 "email" .Params.email)}}
-
-    {{ partial "about" .Params.about}}
-
-    {{ partial "instagram" .Params.instagram}}
-
-    {{ partial "footer" (dict "heading" .Params.emailheading "email" .Params.email)}}
 </div>
 
 {{ end }}
